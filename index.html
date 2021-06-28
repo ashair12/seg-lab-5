@@ -1,0 +1,296 @@
+<!-- 
+References:
+https://www.w3schools.com/html/default.asp 
+https://github.com/RyanMatte/Website/tree/master
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+ 
+    <style>
+      select[type="professionals"]
+      {
+        width:100%;
+        height: 100%;
+      }
+      input[type="debit"]
+      {
+        width:100%;
+        height: 100%;
+      }
+      input[type="CVV"]
+      {
+        width:15%;
+        height: 100%;
+      }
+
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+      </style>
+
+      <script src="scripts/service.js"></script>
+
+      <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <title>Hillside Physiotherapy</title>
+</head>
+
+<body style="background-color:#b9faca;">
+  
+  
+  <header class="base head">
+    <div style="margin-top: -20px;"></div>
+    <section class="head-text">
+      <div class="logo">
+        <img src="images/logo.png" width="50" height="50">
+        Hillside Physiotherapy
+      </div>
+      <ul class="menu">
+        <li style="display: none;"><a href="#home" class="selected">about us</a></li>
+        <li><a href="#home">about us</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#experts">our experts</a></li>
+        <li><a href="#contact">contact us</a></li>
+        |
+        1234 Hillside dr.
+        Toronto, ON, Canada
+      </ul>
+      
+    </section>
+  </header>
+
+
+<!--   
+  <nav class="navbar center-text p-3 my-3" style="background-color:white" >
+    <h1> <img src="images/logo.PNG" width="100" height="100">   Hillside Physiotherapy</h1>
+    <p>1234 Hillside dr.<br> Toronto, ON, Canada</p>
+</nav> -->
+
+
+<br>
+<br>
+
+
+<div class="p-3 my-3 border" style="background-color:white"  id="home">
+  <h2 align=center> ABOUT US</h2>
+    <p style="font-size: 25px; padding-left: 1.5rem">Hillside Physiotherapy is a small physiotherapy clinic located in Toronto. The clinic opened in 2014 and has served many clients with a wide variety of services. We offer <strong>high quality</strong> medical care and services for all of your physiotherapy needs, whether it be sore muscles, rehabilitation, or knee pain, we can help.</p>
+  </div>
+  </div>
+
+  <div class="p-3 my-3 border" style="background-color:white">
+  <div class="container" id="services">
+   <div class="text-center">
+    <h2 class="section-heading text-uppercase">Services</h2>
+    </div>
+    <br>
+    <div class="row text-center">
+     <div class="col-md-4">
+      <img src="images/orthotics.jpg" width="250" height="180">
+        <h4 class="my-3">Orthotics</h4>
+        <p>Get custom orthotic in-soles for your shoes. Improve foot balance and stay comfortable while walking, running, or jumping.</p>
+        <p><strong>Price:</strong> $300-$500</p>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#appointment">
+         Book Appointment
+        </button>      
+     </div>  
+     <div class="col-md-4">
+      <img src="images/rehab.jpg" width="250" height="180">
+        <h4 class="my-3">Rehabilitation</h4>
+        <p>Recently suffered a ligament tear or a broken bone? Book an appointment for rehabilitation to get you back on your feet.</p>
+        <p><strong>Price:</strong> $400</p>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#appointment">
+        Book Appointment
+        </button>
+     </div>  
+     <div class="col-md-4">
+      <img src="images/kneebrace.PNG" width="250" height="180">
+        <h4 class="my-3">Custom Knee Brace</h4>
+        <p>Get a custom knee brace built just for your knees. This brace will aid people with knee pain as well as people rehabilitating from knee injuries.</p>
+        <p><strong>Price:</strong> $600</p>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#appointment">
+        Book Appointment
+        </button>      
+     </div>
+     <div class="col-md-4">
+      <img src="images/chiro.jpg" width="250" height="180">
+      <h4 class="my-3">Chiropractic</h4>
+      <p>See a professional chriopractor to diagnose, treat, and prevent issues that are affecting your musculoskeletal system.</p>
+      <p><strong>Price:</strong> $400</p>
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#appointment">
+       Book Appointment
+      </button>      
+   </div>  
+   <div class="col-md-4">
+    <img src="images/sports.PNG" width="250" height="180">
+      <h4 class="my-3">Sports Therapy</h4>
+      <p>Book an appointment for sports therapy if you are constantly affected by sports-related injuries. Our experts will help you fix your biomechanics.</p>
+      <p><strong>Price:</strong> $250</p>
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#appointment">
+      Book Appointment
+      </button>
+   </div>  
+   <div class="col-md-4">
+    <img src="images/massage.jpeg" width="250" height="180">
+      <h4 class="my-3">Massage Therapy</h4>
+      <p>See our expert massage therapists to help you recover from repeated stress to you muscles and ligaments. Loosen your muscles to prevent reinjury</p>
+      <p><strong>Price:</strong> $200</p>
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#appointment">
+      Book Appointment
+      </button>      
+   </div>
+    </div>
+    </div>
+   </div>
+   
+  </div>
+
+ <div class="modal fade" id="appointment" tabindex="-1" aria-labelledby="appointmentLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+   <div class="modal-content">
+    <div class="modal-header">
+     <h5 class="modal-title" id="appointmentLabel">Appointment Booking</h5>
+     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+   <div class="modal-body">
+    <div class="form-group">
+     <label for="formName"><b>First Name</b></label>
+     <input class="form-control" id="formName">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="formName"><b>Last Name</b></label>
+      <input class="form-control" id="formName">
+     </div>
+     <br>
+    <div class="form-group">
+     <label for="formPhone"><b>Email</b></label>
+     <input class="form-control" id="formEmail">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="formPhone"><b>Preferred Professional</b></label>
+      <br>
+      <select name="professionals" id="professionals" type="professionals">
+        <option value="BobRobert">Dr.Bob Robert</option>
+        <option value="Roberta">Dr.Roberta</option>
+        <option value="RobertBob">Dr.Robert Bob</option>
+        <option value="noPreference" selected="selected">No Preference</option>
+        </select>
+     </div>
+     <br>
+     <div class="form-group">
+      <label for="formPhone"><b>Credit Card Number</b></label>
+      <br><input name="debit" type="debit" id="debit" title="A deposit of $100 will automatically be made.">
+     </div>
+     <br>
+     <div class="form-group">
+      <label for="formPhone"><b>CVV</b></label>
+      <br>
+      <input class="CVV" type="CVV" id="formCard" maxlength="3">
+     </div>
+
+
+
+     <br>
+    <div class="form-group">
+     <label for="formDate"><b>Appointment Date</b></label>
+     <input class="form-control" id="formDate" type="date">
+    </div>
+    <br>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Submit</button>
+  </div>
+ </div>
+</div>
+</div>
+</div>
+
+<div class="p-3 my-3 border" style="background-color:white" id="experts">
+  <div class="container">
+  <div class="text-center">
+  <h2 class="section-heading text-uppercase">Our Experts</h2>
+  <br>
+  <div class="row text-center">
+    <div class="col-md-4">
+       <h4 class="my-3">Dr. Bob Robert</h4>
+       <img src="images/doctor1.PNG" height="260" width="230">
+       <p>Dr. Robert has been a physiotherapist for over 15 years. He is our most experienced expert and is sure to give you the aid you need.</p>
+    
+          
+    </div>  
+    <div class="col-md-4">
+       <h4 class="my-3">Dr. Roberta  </h4>
+       <img src="images/doctor2.PNG" height="260" width="230">
+       <p>Dr. Roberta is our resident expert in sports science and rehabilitation. She is very experienced in getting people back on their feet after an injury.</p>
+       
+       
+    </div>  
+    <div class="col-md-4">
+       <h4 class="my-3">Dr. Robert Bob</h4>
+       <img src="images/doctor3.PNG" height="260" width="230">
+       <p>Dr. Bob is an expert in massage therapy as well as our best chriopractor. He will make sure that you recover properly. </p>
+       
+         
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="p-3 my-3 border" style="background-color:white">
+<div class="container">
+<div class="text-center">
+<h2 class="section-heading text-uppercase" id="contact">Contact</h2>
+<br>
+<div class="row text-center">
+
+<div class="row text-center">
+<h4 class="card-text" align="left"><i class="fa fa-comments"></i>Send a Message</h4>
+<div class="form-group" align="left">
+<label for="formName">Name</label>
+<input class="form-control" id="formName">
+</div>
+<div class="form-group" align="left">
+<label for="formEmail">Email</label>
+<input class="form-control" id="formEmail">
+</div>
+<div class="form-group" align="left">
+<label for="message">Your Message</label>
+<textarea class="form-control" id="message" name="message"></textarea>
+</div>
+<div class="col-md-4">
+  <br>
+  <br>
+  <h4 class="card-text" align="left"><i class="fa fa-map-marker"></i> Address</h4>
+  <p align="left">1234 Hillside dr.</p>
+  <p align="left">Toronto, Ontario, L5L 1O1</p>
+  <p align="left">647-123-4567</p>
+  <p align="left">hillsidephysio@physio.com</p>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<br>
+<br>
+<p id="signature" align="right"> Site created by Ashair Imran</p>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>
